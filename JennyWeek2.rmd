@@ -1,0 +1,27 @@
+---
+title: "Week 2 Assignment"
+author: "Jenny"
+date: "July 24, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is what I'm doing
+
+
+
+
+```{r}
+n = 5
+r = 3
+
+nfac <- prod(1:n)
+rfac <- prod(1:r)
+nrfac <- prod(1:(n-r))
+
+choose <- nfac/(nrfac* rfac)
+sprintf("%s choose %s = %s", n, r, choose)
+```
